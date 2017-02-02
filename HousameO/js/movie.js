@@ -59,7 +59,7 @@ function Search(){
 	 for (var i = 0 ; i < movies.length; i++) {
 	 	//var compare2Words = movies[i].year.localeCompare(searchedWord);
 	 	//if (compare2Words == 0)
-	 	if (movies[i].title.toLowerCase() === searchedWord.toLowerCase())
+	 	if (movies[i].title.toLowerCase() === searchedWord.toLowerCase() || movies[i].year == searchedWord || movies[i].IMDb == searchedWord)
 	 		 
 	 		{	alert(" One title is found");
 	 			 tempStr = showSpeficMovies(i);
