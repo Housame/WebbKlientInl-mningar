@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+    <title>MiniSpel</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <div class="header">
+    <div id="logo-content">
+<img src="images/logo.png" class="logo">
+</div>
+<ul>
+
+	<li><a href="index.html">Hem</a></li>
+	<li><a href="https://se.linkedin.com/in/housame-oueslati-b1249874" target="_blank">Min LinkedIn</a></li>
+	<li><a href="contact.html">Kontakt</a></li>
+	<li><a href="minispel.html">Mini spel</a></li>
+</ul>
+</div>
+   
+</head>
+<body >
+</br></br></br>
+<div id="game">
+<div id="game-menu">	
+	<button id="hangman-btn" class="game-btn">Hangman</button></br>
+	<button class="game-btn">Kmr snart</button></br>
+	<script>
+	document.getElementById("hangman-btn").onclick = function() { 
+
+		document.getElementById("hangman-game").style.display="block";};
+ </script>
+</div>
+<div id="game-box">
+
+
+
+<div id="hangman-game" style="display: none;">
+<div class="wrapper" >
+	
+   <h1>Hangman</h1>
+    <h2>Hangman Game JS</h2>
+    <p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
+	</div>
+	<div class="wrapper">
+    <div id="buttons">
+    </div>  
+    <p id="catagoryName"></p>
+    <div id="hold">
+    </div>
+    <p id="mylives"></p>
+    <p id="clue">Clue -</p>  
+     <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+    <div class="container">
+      <button id="hint">Hint</button>
+      <button id="reset">Play again</button>
+    </div>
+    </div>
+</div>
+</div>
+
+
+<div class="all">
+</div>	
+<video autoplay loop poster="Snapshots/Very-Open-Space.jpg" id="video-container">
+<source src="WEBM/Very-Open-Space.webm" type="video/webm">
+<source src="MP4/Very-Open-Space.mp4" type="video/mp4">
+</video>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="css/movie.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/movie.js"></script>
+</head>
+<body class="all" >
+<div id="search-field">
+	<form onsubmit="return false;">
+ 
+  <input type="search" name="search" id="searched-word" placeholder="Search intern.." onchange="Search()" >
+</form>
+</div>
+<h3>Show top 10 movie in a </h3><br>
+<div class="buttons">
+<button class="movie-btn" id="blue-btn" onclick="ShowBlue()">blue table</button>
+<button class="movie-btn" id="red-btn" onclick="ShowRed()">red table</button>
+<button class="movie-btn" id="retro-btn" onclick="ShowRetro()">retro style table</button>
+<button class="movie-btn" id="fruit-btn" onclick="ShowFruit()">fruit-like style table</button>
+</div>
+<br>
+<div id="box" class="film-box">
+	
+</div>
+</body>
+</html>
